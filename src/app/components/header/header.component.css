@@ -1,0 +1,46 @@
+/* sidebar-logo container */
+.sidebar-logo {
+    background-color: #333; /* Sidebar background */
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Full height */
+    width: 250px;
+  }
+  
+  /* Styling for welcome text */
+  .welcometxt {
+    margin-left: 60px;
+  }
+  
+  /* Styling for buttons */
+  .logoutbtn {
+    background-color: #f0a500; /* Button color */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logoutbtn i {
+    margin-right: 5px;
+  }
+  
+  /* Styling for user info */
+  .sidebar-text {
+    color: whitesmoke;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  /* Active hover effect on buttons */
+  .logoutbtn:hover {
+    background-color: #e09e00;
+  }
+  

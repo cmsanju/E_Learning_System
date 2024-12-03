@@ -1,0 +1,119 @@
+<app-header></app-header>
+
+<div class="panel panel-primary" id="professorapproval">
+  <div class="panel-heading">
+    <h2 *ngIf="currRole === 'professor' || currRole === 'PROFESSOR'" 
+        class="panel-title">
+      Your Approval Status
+      <div *ngFor="let professor of approval | async" class="status-info">
+        <div *ngIf="professor.status === 'accept'">
+          <h3><small class="status-accepted">Verified & Accepted</small> ID: <span class="status-date">{{professor.professorid}}</span></h3>
+        </div>
+        <div *ngIf="professor.status === 'false'">
+          <h3><small class="status-pending">Not yet Verified</small></h3>
+        </div>
+        <div *ngIf="professor.status === 'reject'">
+          <h3><small class="status-rejected">Verified & Rejected</small></h3>
+        </div>
+      </div>
+    </h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-bordered">
+      <thead class="headercolor">
+        <tr>
+          <th>EdifyTech</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Degree</th>
+          <th>Experience</th>
+          <th>Institution</th>
+          <th>Department</th>
+          <th>Mobile</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let professor of approval | async">
+          <td>
+            <img *ngIf="professor.gender === 'Male'" class="professor-img" 
+                 [src]="'assets/img/maleprofessor.png'" width="80" height="80">
+            <img *ngIf="professor.gender === 'Female'" class="professor-img" 
+                 [src]="'assets/img/femaleprofessor.png'" width="80" height="80">
+          </td>
+          <td>{{professor.professorname}}</td>
+          <td>{{professor.email}}</td>
+          <td>{{professor.degreecompleted}}</td>
+          <td>{{professor.experience}} years</td>
+          <td>{{professor.institutionname}}</td>
+          <td>{{professor.department}}</td>
+          <td>{{professor.mobile}}</td>
+          <td class="status-column">
+            <div *ngIf="currRole === 'professor' || currRole === 'PROFESSOR' && professor.email === loggedUser">
+              <div *ngIf="professor.status === 'accept'" class="status-accepted">Accepted</div>
+              <div *ngIf="professor.status === 'false'" class="status-pending">Pending</div>
+              <div *ngIf="professor.status === 'reject'" class="status-rejected">Rejected</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel panel-primary" id="adminapproval">
+  <div class="panel-heading">
+    <h2 *ngIf="currRole === 'admin' || currRole === 'ADMIN'" 
+        class="panel-title">
+      Approve Professor Here
+    </h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Identity</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Degree</th>
+          <th>Experience</th>
+          <th>Institution</th>
+          <th>Department</th>
+          <th>Mobile</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let professor of professorlist | async">
+          <td>
+            <img *ngIf="professor.gender === 'Male'" class="professor-img" 
+                 [src]="'assets/img/maleprofessor.png'" width="80" height="80">
+            <img *ngIf="professor.gender === 'Female'" class="professor-img" 
+                 [src]="'assets/img/femaleprofessor.png'" width="80" height="80">
+          </td>
+          <td>{{professor.professorname}}</td>
+          <td>{{professor.email}}</td>
+          <td>{{professor.degreecompleted}}</td>
+          <td>{{professor.experience}} years</td>
+          <td>{{professor.institutionname}}</td>
+          <td>{{professor.department}}</td>
+          <td>{{professor.mobile}}</td>
+          <td class="status-column">
+            <div *ngIf="loggedUser === 'admin@gmail.com' && professor.status === 'false'">
+              <button (click)="acceptRequest(professor.email)" class="btn btn-accept">Accept</button>
+              <button (click)="rejectRequest(professor.email)" class="btn btn-reject">Reject</button>
+            </div>
+            <div *ngIf="loggedUser === 'admin@gmail.com' && professor.status === 'accept'">
+              <div class="status-accepted">Accepted</div>
+            </div>
+            <div *ngIf="loggedUser === 'admin@gmail.com' && professor.status === 'reject'">
+              <div class="status-rejected">Rejected</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<app-footer></app-footer>

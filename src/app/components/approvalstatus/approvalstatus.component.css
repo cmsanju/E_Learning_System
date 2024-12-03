@@ -1,0 +1,108 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .panel-heading h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .status-info {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .status-accepted {
+    color: #4CAF50; /* Green for accepted */
+  }
+  
+  .status-pending {
+    color: #FFA500; /* Orange for pending */
+  }
+  
+  .status-rejected {
+    color: #F44336; /* Red for rejected */
+  }
+  
+  .status-date {
+    color: #555;
+    font-style: italic;
+  }
+  
+  .professor-img {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .status-column {
+    text-align: center;
+  }
+  
+  .panel-body .table {
+    margin-top: 20px;
+  }
+  
+  .table th {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+  }
+  
+  .table td {
+    text-align: center;
+  }
+  
+  .btn-accept {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .btn-accept:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-reject {
+    background-color: #F44336;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-reject:hover {
+    background-color: #e53935;
+  }
+  
+  .panel {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .panel-primary {
+    background-color: #fff;
+  }
+  
+  .panel-body {
+    padding: 20px;
+  }
+  
+  /* Specific Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .table td, .table th {
+      padding: 10px;
+    }
+  
+    .btn-accept, .btn-reject {
+      width: 100%;
+    }
+  }  

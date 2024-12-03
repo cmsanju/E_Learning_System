@@ -1,0 +1,88 @@
+/* Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .textual {
+    font-size: 1.8rem;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+  }
+  
+  .info-text {
+    color: #2c6b2f;
+    font-weight: 600;
+    margin-left: 10%;
+  }
+  
+  .placeholder-option {
+    color: lightgray;
+  }
+  
+  /* Form Fields */
+  .form-control {
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Buttons */
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 8px;
+  }
+  
+  .add-btn,
+  .remove-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .add-btn {
+    background-color: #1a73e8;
+    color: white;
+  }
+  
+  .remove-btn {
+    background-color: #d32f2f;
+    color: white;
+  }
+  
+  /* Submit Button */
+  .register-btn {
+    margin-top: 15px;
+    padding: 0.7rem 2rem;
+    background-color: #1a73e8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .register-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Checkbox */
+  .checkbox-text {
+    font-weight: bold;
+    color: darkred;
+  }
+  
+  /* Chapter Section */
+  .chapter {
+    margin-bottom: 1.5rem;
+  }
+  

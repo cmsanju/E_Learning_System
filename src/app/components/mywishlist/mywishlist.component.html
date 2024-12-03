@@ -1,0 +1,53 @@
+<app-header></app-header>
+
+<div class="heading-text" *ngIf="currRole === 'user'">
+  <b><i class="fa fa-heart icon-red"></i> User WishList</b>
+</div>
+<div class="heading-text" *ngIf="currRole === 'professor'">
+  <b><i class="fa fa-heart icon-red"></i> Professor WishList</b>
+</div>
+
+<div class="row">
+  <div *ngFor="let course of wishlist | async" class="col-4 card card-container">
+    <div class="img-block">
+      <div class="circle">
+        <img
+          *ngIf="course.coursetype === 'Youtube'"
+          src="assets/img/ytube.gif"
+          class="bloodimg"
+        />
+        <img
+          *ngIf="course.coursetype === 'Website'"
+          src="assets/img/website.png"
+          class="bloodimg"
+        />
+      </div>
+    </div>
+    <div class="card-block">
+      <div><b>Course:</b> {{ course.coursename }}</div>
+      <div>
+        <b>Course ID:</b>
+        <span class="course-id">{{ course.courseid }}</span>
+      </div>
+      <div><b>Instructor:</b> {{ course.instructorname }}</div>
+      <div><b>Learners:</b> {{ course.enrolledcount }} enrolled</div>
+      <div><b>Type:</b> {{ course.coursetype }}</div>
+      <div><b>Level:</b> {{ course.skilllevel }}</div>
+      <div><b>Language:</b> {{ course.language }}</div>
+      <a
+        *ngIf="course.coursetype === 'Youtube'"
+        (click)="visitCourse(course.coursename)"
+        class="btn btn-primary action-btn"
+        >Visit Course</a
+      >
+      <a
+        *ngIf="course.coursetype === 'Website'"
+        (click)="openURL(course.websiteurl)"
+        class="btn btn-primary action-btn"
+        >Visit Course</a
+      >
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

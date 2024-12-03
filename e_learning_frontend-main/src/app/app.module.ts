@@ -69,3 +69,5 @@ import { WelcomepageComponent } from './components/welcomepage/welcomepage.compo
   bootstrap: [AppComponent, RegistrationComponent]
 })
 export class AppModule { }
+
+

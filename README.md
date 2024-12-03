@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # E-Learning System  
 ### Team Name: **Springular Nexus**
 

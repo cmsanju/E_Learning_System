@@ -1,0 +1,175 @@
+<!--<div class="content">
+  <div class="header" id="header">
+    <div class="nav">
+      <div class="child-container">
+        <img [src]="'logo.png'" height="50" class="logo-image">
+        <h1 class="title">LearnPro</h1>
+    </div>
+
+     <div class="switchs">
+      <button style="font-weight: bold;" class="log" id="log" [routerLink]="['']"><i class="fa fa-home"></i> Home</button>
+      <button style="font-weight: bold;" class="log" id="log" onclick="location.href='#services';"><i class="fa fa-cog"></i> Services</button>
+      <button style="font-weight: bold;" class="log" id="log" [routerLink]="['/login']"><i class="fa fa-sign-in"></i> LOGIN</button>
+      <button style="font-weight: bold;" class="create_acc" id="create_acc" [routerLink]="['/registration']"><i class="fa fa-user-plus"></i> CREATE ACCOUNT</button>
+    </div>
+  </div>
+  <div class="main">
+    <div class="text">
+      <h1 style="margin-left: -10%; font-family: Verdana;">LearnPro - Your E-Learning Partner</h1><br>
+      <h4 style="font-family: monospace; font-weight: bolder; margin-left: -8%; color: rgb(248, 247, 247);">Developed By: <br>Team-1 </h4><br><br>
+    </div><br>
+    <img class="floating" id="img3" [src]="'assets/img/lms-bg.png'">
+  </div>
+</div>
+<br>
+</div>
+<br><br>
+<marquee class="marquee" direction="left">🌟 Welcome to LearnPro! 🎓 Experience seamless learning at your fingertips. 🚀 Advance your skills and unlock new opportunities today! 🌟</marquee>
+
+<section id="about" class="about about-bg">
+<div class="about-container">
+    <div class="subtext1" id="subtext1"><span class="counter">01</span> &nbsp;🌟 Intuitive Learning Experience<i id="subtext1" class="fa fa-caret-down"></i></div>
+      <div class="innertext1" id="innertext1">LearnPro offers a <b style="color: rgb(51, 10, 213); font-size: larger; font-weight: bolder;">user-friendly interface</b><br>📚 Effortlessly explore resources and enhance your skills. <br>📥 Download materials with ease for a smoother learning experience.
+      <br>🚀 Empower your growth with hassle-free access to high-quality content.</div>
+</div>
+<div class="about-container">
+      <div class="subtext1" id="subtext2"><span class="counter">02</span> &nbsp;🌐 Versatile E-Learning Platform<i id="subtext2" class="fa fa-caret-down"></i></div>
+      <div class="innertext1" id="innertext2">👩‍💼 Admin: Effortlessly manage the platform with advanced tools.<br>👩‍🏫 Professor: Share knowledge, create courses, and track progress.<br>👨‍🎓 User: Learn, explore, and achieve your learning objectives with LearnPro.</div>
+</div>
+<div class="about-container">
+      <div class="subtext1" id="subtext3"><span class="counter">03</span> &nbsp;🎯 Personalized Learning Modules<i id="subtext3" class="fa fa-caret-down"></i></div>
+      <div class="innertext1" id="innertext3">🎥 Video Lectures: Simplify complex topics with engaging visuals.<br>💻 Interactive Lessons: Dive deep into concepts through web-based modules.<br>👩‍💼 Admins and 👩‍🏫 Professors can customize content, providing a tailored experience for every learner.</div>
+</div>
+<div class="about-container">
+      <div class="subtext1" id="subtext4"><span class="counter">04</span> &nbsp;🎥 Streamlined Video Learning<i id="subtext4" class="fa fa-caret-down"></i></div>
+      <div class="innertext1" id="innertext4">📚 Chapter Segmentation: Navigate videos with organized chapters. <br>📝 Features: Take notes, ask questions, and download resources directly from the portal.<br>🌟 Receive and provide feedback for continuous improvement.</div>
+</div><br>
+
+<img class="automation" [src]="'assets/img/girl learn.jpg'" width="460" height="420">
+</section>
+
+<main id="main">
+<section id="services" class="services section-bg">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(3, 34, 34);">🌟 Discover Your Path to Success with LearnPro 🚀</h2>
+    </div>
+    <div class="mid_body2">
+      <div class="details">
+        <div class="detail_1" (click)="navigate()" style="background-color: rgb(129, 26, 167); margin-right: 5%;">
+          <h2 style="font-weight: bolder; font-size: 35px;font-family: monospace; margin-top: 5%; color: white;"> Admin </h2>
+          <div class="circle" style="border-radius: 50%; background-color: white; padding: 10%;">
+              <img [src]="'assets/img/admin.png'" width="130" height="130">
+          </div>
+        </div>
+        <div class="detail_2" (click)="navigate()" style="background-color: rgb(129, 26, 167); margin-right: 5%;">
+          <h2 style="font-weight: bolder; font-size: 35px;font-family: monospace; margin-top: 5%; color: white;"> Professor </h2>
+          <div class="circle" style="border-radius: 50%; background-color: white; padding: 10%;">
+              <img [src]="'assets/img/femaleprofessor.png'" width="130" height="130">
+          </div>
+      </div>
+        <div class="detail_3" (click)="navigate()" style="background-color: rgb(129, 26, 167); margin-right: 5%;">
+          <h2 style="font-weight: bolder; font-size: 35px;font-family: monospace; margin-top: 5%; color: white;"> User </h2>
+          <div class="circle" style="border-radius: 50%; background-color: white; padding: 10%;">
+              <img [src]="'assets/img/male.png'" width="130" height="130">
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<app-footer></app-footer>
+-->
+
+<div class="background-container">
+  <div class="container">
+      <div class="child-container">
+          <img [src]="'assets/logo.png'" height="50" class="logo-image">
+          <h1 class="title">LearnPro</h1>
+      </div>
+      <div id="nav-container">
+          <nav>
+              <a routerLink="/home" routerLinkActive="active">Home</a>
+              <a routerLink="/about" routerLinkActive="active">About</a>
+              <a routerLink="/contact" routerLinkActive="active">Contact</a>
+             <!----<a routerLink="/courses" routerLinkActive="active">Courses</a>-->
+              <a routerLink="/registration" routerLinkActive="active"><button class="btn">Register</button></a>
+              <a routerLink="/login" routerLinkActive="active"><button class="btn">Login</button></a>
+          </nav>
+      </div>
+  </div>
+  <button class="start-btn" routerLink="/login">Start Learning</button>
+</div>
+
+<div class="background-image">
+<div class="content">
+  <div class="image-section">
+    <img
+      src="assets/image/student1.jpg"
+      alt="Smiling professional"
+      class="hero-image"
+    />
+  </div>
+  <div class="text-section" style="font-family: 'OpenSans-light', Arial, sans-serif;">
+    <h1>Take the next step toward your personal and professional goals with LearnPro.</h1>
+    <p>
+      Join now to receive personalized recommendations from our full catalog.
+    </p>
+  </div>
+</div>
+</div>
+
+
+
+<footer>
+<div class="footer-container">
+  <div class="footer-section">
+    <h4>Follow Us!</h4>
+    <button class="refer-button">Refer and Earn</button>
+    <div class="social-icons" style="margin-top: 30px;">
+      <a href="#"><img src="assets/image/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="assets/image/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="assets/image/linkedin.png" alt="LinkedIn"></a>
+      <a href="#"><img src="assets/image/telegram.png" alt="Telegram"></a>
+      <a href="#"><img src="assets/image/insta.png" alt="Instagram"></a>
+    </div>
+  </div>
+  <div class="footer-section">
+    <h4>Company</h4>
+    <ul>
+      <li><a routerLink="/about">About Us</a></li>
+      <li><a routerLink="/courses">Courses</a></li>
+      <li><a routerLink="/contact">Contact Us</a></li>
+
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h4>Work with Us</h4>
+    <ul>
+      <li><a href="#">Become an Instructor</a></li>
+      <li><a href="#">Blog as Guest</a></li>
+    
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h4>Explore Learning</h4>
+    <ul>
+      <li><a routerLink="/courses">Browse Courses</a></li>
+      <li><a routerLink="/booking-component">Book a Course</a></li>
+      <li><a href="#">Learning Paths</a></li>
+      <li><a href="#">FAQs</a></li>
+    </ul>
+  </div>
+</div>
+<div class="footer-bottom">
+  <p>Trending Post Graduate Programs</p>
+  <p>Full Stack Development,Artificial Intelligence, Cloud Computing, Data Science...</p>
+
+</div>
+<div class="footer-copyright">
+  <p>&copy; 2024 Infosys E-Learning Project. All Rights Reserved.</p>
+</div>
+</footer>
+

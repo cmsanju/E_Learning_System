@@ -12,21 +12,21 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Course Name : <b style="color:red;">*</b></label>
-                                <input type="text" class="form-control" placeholder="enter course name" name="coursename" [(ngModel)]="course.coursename" required 
+                                <input type="text" class="form-control" placeholder="enter course name" name="coursename" [(ngModel)]="course.coursename" required
                                 #coursename="ngModel"
                                 [class.is-invalid]="coursename.invalid && coursename.touched">
                                <small class="text-danger" [class.d-none]="coursename.valid || coursename.untouched"><b>required field</b></small>
                             </div>
                             <div class="form-group">
                                 <label>Instructor Name : <b style="color:red;">*</b></label>
-                                <input type="text" class="form-control" placeholder="enter instructor name" name="coursename" [(ngModel)]="course.instructorname" required 
+                                <input type="text" class="form-control" placeholder="enter instructor name" name="coursename" [(ngModel)]="course.instructorname" required
                                 #instructorname="ngModel"
                                 [class.is-invalid]="instructorname.invalid && instructorname.touched">
                                <small class="text-danger" [class.d-none]="instructorname.valid || instructorname.untouched"><b>required field</b></small>
                             </div>
                             <div class="form-group" style="display: none;" id="youtubelink">
                                 <label>Course Video ID : (only ID) <b style="color:red;">*</b></label>
-                                <input type="url" class="form-control" placeholder="please mention youtube video ID" name="youtubeurl" [(ngModel)]="course.youtubeurl" required 
+                                <input type="url" class="form-control" placeholder="please mention youtube video ID" name="youtubeurl" [(ngModel)]="course.youtubeurl" required
                                 #youtubeurl="ngModel"
                                 [class.is-invalid]="youtubeurl.invalid && youtubeurl.touched">
                                 <small class="text-danger" [class.d-none]="youtubeurl.valid || youtubeurl.untouched"><b>required field</b></small>
@@ -37,9 +37,6 @@
                                 #coursetype="ngModel">
                                     <option value="Website">Website</option>
                                     <option value="Youtube">Youtube</option>
-                                    <option>Live Interaction</option>
-                                    <option>Google Classroom</option>
-                                    <option>Others</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -59,11 +56,11 @@
                                 <input type="date" class="form-control" placeholder="select enrolled date" name="enrolleddate" [(ngModel)]="course.enrolleddate" required
                                 #enrolleddate="ngModel"
                                 [class.is-invalid]="enrolleddate.invalid && enrolleddate.touched">
-                                <small class="text-danger" [class.d-none]="enrolleddate.valid || enrolleddate.untouched"><b>required field</b></small>                          
+                                <small class="text-danger" [class.d-none]="enrolleddate.valid || enrolleddate.untouched"><b>required field</b></small>
                             </div>
                             <div class="form-group">
                                 <label>Instructor Institution Name : <b style="color:red;">*</b></label>
-                                <input type="text" class="form-control" placeholder="enter instructor institution name" name="instructorinstitution" [(ngModel)]="course.instructorinstitution" required 
+                                <input type="text" class="form-control" placeholder="enter instructor institution name" name="instructorinstitution" [(ngModel)]="course.instructorinstitution" required
                                 #instructorinstitution="ngModel"
                                 [class.is-invalid]="instructorinstitution.invalid && instructorinstitution.touched">
                                <small class="text-danger" [class.d-none]="instructorinstitution.valid || instructorinstitution.untouched"><b>required field</b></small>
@@ -85,7 +82,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="description">Course Description : <b style="color:red;">*</b></label>
-                                <textarea type="text" rows = "4" class="form-control" placeholder="enter course description here" name="prescription" [(ngModel)]="course.description" required 
+                                <textarea type="text" rows = "4" class="form-control" placeholder="enter course description here" name="prescription" [(ngModel)]="course.description" required
                                 #description="ngModel"
                                 [class.is-invalid]="description.invalid && description.touched"></textarea>
                                <small class="text-danger" [class.d-none]="description.valid || description.untouched"><b>required field</b></small>
@@ -98,6 +95,6 @@
             </div>
         </div>
     </div>
-</div>		
+</div>
 
 <app-footer></app-footer>

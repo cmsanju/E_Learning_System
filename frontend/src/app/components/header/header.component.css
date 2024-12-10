@@ -5,12 +5,12 @@
   .content-container {
     padding-top: 20px;
   }
-  
+
   .sidebar-logo {
     padding: 15px 15px 15px 30px;
     font-size: 20px;
     text-align: right;
-    background-color: rgb(13, 26, 122);
+    background-color: purple;
     width: 100%;
   }
   .logoutbtn{

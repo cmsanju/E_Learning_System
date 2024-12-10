@@ -54,9 +54,4 @@ export class UserdashboardComponent implements OnInit {
 
   }
 
-  isHoverCourses = false;
-  isHoverUsers = false;
-  isHoverEnrollments = false;
-  isHoverSales = false;
-
 }

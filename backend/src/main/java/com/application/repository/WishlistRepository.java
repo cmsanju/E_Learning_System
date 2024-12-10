@@ -4,7 +4,7 @@ import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import com.application.model.Wishlist;
 
-public interface WishlistRepository extends CrudRepository<Wishlist, String>
+public interface WishlistRepository extends CrudRepository<Wishlist, Integer>
 {
     public Wishlist findByCoursename(String coursename);
 	

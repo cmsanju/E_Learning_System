@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import com.application.model.Professor;
 
-public interface ProfessorRepository extends CrudRepository<Professor, String>
+public interface ProfessorRepository extends CrudRepository<Professor, Integer>
 {
     public Professor findByEmail(String email);
     

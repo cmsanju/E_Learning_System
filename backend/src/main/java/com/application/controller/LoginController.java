@@ -12,7 +12,7 @@ import com.application.services.ProfessorService;
 import com.application.services.UserService;
 
 @RestController
-public class LoginController 
+public class LoginController
 {
 	@Autowired
 	private UserService userService;

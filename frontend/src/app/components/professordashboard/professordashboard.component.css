@@ -7,7 +7,7 @@
     top: 0;
     height: 120%;
     width: 78px;
-    background: #11101D;
+    background: #b876d6;
     padding: 6px 14px;
     z-index: 99;
     transition: all 0.5s ease;
@@ -61,12 +61,12 @@
   }
   .sidebar .nav-list{
     margin-top: 20px;
-    margin-left: -65%; 
+    margin-left: -65%;
     height: 100%;
   }
   .sidebar.open .nav-list{
     margin-top: 20px;
-    margin-left: -15%; 
+    margin-left: -15%;
     height: 100%;
   }
   .sidebar.open .fa-bars
@@ -263,8 +263,8 @@ padding: 3%;
 }
 .dashboard-card:hover
 {
-  transform: scale(1.05); 
-  cursor: pointer;  
+  transform: scale(1.05);
+  cursor: pointer;
 }
 .headtxt
 {
